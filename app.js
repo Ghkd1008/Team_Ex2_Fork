@@ -13,3 +13,9 @@ function initLikeAndAlert() {
       const current = Number(likeCountEl.dataset.count || '0');
       const next = current + 1;
       likeCountEl.dataset.count = String(next);
+      likeCountEl.textContent = String(next);
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', initLikeAndAlert);
